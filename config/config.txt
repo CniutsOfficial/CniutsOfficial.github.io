@@ -1,0 +1,43 @@
+{
+  "siteTitle": "初桐小栈",
+  "theme": {
+    "primaryColor": "#457DD4", // 蓝色主题色
+    "secondaryColor": "#E67600", // 橙色点缀色
+    "backgroundColor": "white", // 网站背景色
+    "fontFamily": "'Maple Mono SC NF', sans-serif", // 清新、现代的字体
+    "textColor": "#333333" // 主要文字颜色
+  },
+  "layout": {
+    "header": {
+      "height": "80px",
+      "backgroundColor": "white",
+      "logo": {
+        "url": "./.resource/images/logo/logo_trans.png",
+        "alt": "初桐小栈 Logo"
+      },
+      "menu": {
+        "alignment": "center",
+        "links": [
+          { "name": "主页", "url": "/home.html" },
+          { "name": "DocuBase", "url": "#" },
+          { "name": "资源中心", "url": "/resource.html" },
+          { "name": "关于我们", "url": "/about.html" }
+        ]
+      }
+    },
+    "footer": {
+      "backgroundColor": "#457DD4",
+      "textColor": "#FFFFFF",
+      "text": "Copyright © 2025-present 初桐小栈Cniuts, 保留所有权利."
+    },
+    "content": {
+      "maxWidth": "1200px",
+      "padding": "20px"
+    }
+  },
+  "features": {
+    "darkMode": false,
+    "animations": true,
+    "responsive": true
+  }
+}

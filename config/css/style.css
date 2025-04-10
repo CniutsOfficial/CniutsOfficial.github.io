@@ -1,0 +1,319 @@
+/* 定义自定义字体 'Maple' */
+@font-face {
+  font-family: 'Maple';
+  src: url('../../.resource/fonts/MapleMono-NF-CN-Regular.ttf');
+  /* 字体文件路径 */
+}
+
+/* 设置页面主体的样式 */
+body {
+  font-family: 'Maple', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 设置背景图片 */
+.home {
+  background-image: url('https://api.pengzhanbo.cn/wallpaper/bing/');
+  
+}
+
+
+/* 设置主要内容区域的样式，使其能够扩展填充剩余空间 */
+main {
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  flex-direction: column;
+  /* Flexbox 布局的方向为垂直，以便子元素可以垂直居中 */
+  justify-content: center;
+  /* 子元素在主轴上居中对齐 */
+  align-items: center;
+  /* 子元素在交叉轴上居中对齐 */
+  flex-grow: 1;
+  /* 允许元素扩展以填充可用空间 */
+}
+
+
+/* 设置页眉的样式 */
+.header {
+  height: 80px;
+  /* 页眉高度为80像素 */
+  background-color: white;
+  /* 页眉背景颜色为白色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* 添加阴影效果 */
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  justify-content: space-between;
+  /* 子元素在主轴上两端对齐 */
+  align-items: center;
+  /* 子元素在交叉轴上居中对齐 */
+  padding: 0 20px;
+  /* 左右内边距为20像素 */
+}
+
+/* 设置页眉中logo图片的样式 */
+.header .logo img {
+  height: 40px;
+  /* 图片高度为40像素 */
+}
+
+/* 设置页眉中菜单的样式 */
+.header .menu {
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  gap: 30px;
+  /* 子元素之间的间距为30像素 */
+}
+
+/* 设置页眉中菜单链接的样式 */
+.header .menu a {
+  color: #457DD4;
+  /* 链接文字颜色为蓝色 */
+  text-decoration: none;
+  /* 去掉下划线 */
+  font-size: 16px;
+  /* 字体大小为16像素 */
+}
+
+/* 设置页眉中菜单链接在鼠标悬停时的样式 */
+.header .menu a:hover {
+  text-decoration: underline;
+  /* 添加下划线 */
+}
+
+/* 设置页眉中激活菜单项的样式 */
+.header .menu .active {
+  color: #E67600;
+  /* 激活项文字颜色为橙色 */
+  font-weight: bold;
+  /* 字体加粗 */
+}
+
+/* 设置主要内容区域的样式 */
+.content {
+  justify-content: center;
+  /* 子元素在主轴上居中对齐 */
+  text-align: center;
+  /* 文本居中对齐 */
+  max-width: 1200px;
+  /* 最大宽度为1200像素 */
+  margin: 0 auto;
+  /* 水平居中 */
+  padding: 20px;
+  /* 上下左右内边距为20像素 */
+
+}
+
+/* 设置主要内容区域中一级标题的样式 */
+.content h1 {
+  font-size: 36px;
+  /* 字体大小为36像素 */
+  margin-bottom: 20px;
+  /* 下外边距为20像素 */
+  color: #457DD4;
+  /* 文字颜色为蓝色 */
+}
+/* 设置主要内容区域中p标签的样式 */
+.content p {
+  font-size: 16px;
+  /* 字体大小为16像素 */
+  line-height: 1.5; 
+  /* 行高为字体大小的1.5倍 */
+  margin-bottom: 20px;
+  /* 下外边距为20像素 */
+}
+
+/* 设置内容区块的样式 */
+.section {
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  flex-direction: column;
+  /* Flexbox 布局的方向为垂直 */
+  justify-content: center;
+  /* 子元素在主轴上居中对齐 */
+  align-items: center;
+  /* 子元素在交叉轴上居中对齐 */
+  margin: 40px 7%;
+  /* 上下外边距为40像素, 左右外边距为7% */
+  border-radius: 7px;
+  /* 边框半径为7像素，使边角圆滑 */
+  box-shadow: #333333 2px 2px 4px;
+  /* 添加阴影效果 */
+  padding: 30px;
+  /* 上下左右内边距为30像素 */
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* 设置内容区块中二级标题的样式 */
+.section h2 {
+  font-size: 24px;
+  /* 字体大小为24像素 */
+  margin-bottom: 20px;
+  /* 下外边距为20像素 */
+  color: #E67600;
+  /* 文字颜色为橙色 */
+}
+
+/* 设置内容区块中段落和其他元素的样式 */
+.section p {
+  font-size: 16px;
+  /* 字体大小为16像素 */
+  line-height: 1.5;
+  /* 行高为字体大小的1.5倍 */
+  margin-bottom: 20px;
+  /* 下外边距为20像素 */
+}
+
+.section img {
+  max-width: 100%;
+  /* 最大宽度为父容器的100% */
+  height: auto;
+  /* 高度自适应 */
+  margin-bottom: 20px;
+  /* 下外边距为20像素 */
+}
+
+.section a {
+  color: #457DD4;
+  /* 链接文字颜色为蓝色 */
+  text-decoration: none;
+  /* 去掉下划线 */
+  font-weight: bold;
+  /* 字体加粗 */
+}
+
+.error {
+  font-size: 18px;
+  /* 字体大小为18像素 */
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  flex-direction:column;
+  /* Flexbox 布局的方向为垂直 */
+  justify-content: center;
+  /* 子元素在主轴上居中对齐 */
+  align-items: center;
+  /* 子元素在交叉轴上居中对齐 */
+  margin: 40px 7%;
+  /* 上下外边距为40像素, 左右外边距为7% */
+  border-radius: 7px;
+  /* 边框半径为7像素，使边角圆滑 */
+  box-shadow: #333333 2px 2px 4px;
+  /* 添加阴影效果 */
+  padding: 30px;
+  /* 上下左右内边距为30像素 */
+  max-width: 1200px;
+  /* 最大宽度为1200像素 */
+}
+
+.error h1 {
+  font-size: 96px;
+  /* 字体大小为96像素 */
+  margin-bottom: 20px;
+  /* 下外边距为20像素 */
+  color: #E67600;
+  /* 文字颜色为橙色 */
+}
+
+.error h2 {
+  font-size: 24px;
+  /* 字体大小为24像素 */
+  margin-bottom: 20px;  
+  /* 下外边距为20像素 */
+  color: #333333;
+  /* 文字颜色为深灰色 */
+}
+
+.btn-group1 {
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  justify-content: center;
+  /* 子元素在主轴上居中对齐 */
+  align-items: center;
+  /* 子元素在交叉轴上居中对齐 */
+  margin-top: 20px;
+  /* 上外边距为20像素 */
+}
+
+.btn-group1 .btn1 {
+  background-color: #457DD4;
+  /* 背景颜色为蓝色 */
+  color: #FFFFFF;
+  /* 文字颜色为白色 */
+  font-size: 16px;
+  /* 字体大小为16像素 */
+  padding: 10px 20px;
+  /* 上下内边距为10像素, 左右内边距为20像素 */
+  border-radius: 5px;
+  /* 边框半径为5像素，使边角圆滑 */
+  margin-right: 10px;
+  /* 右外边距为10像素 */
+  cursor: pointer;
+  /* 鼠标指针 */
+}
+
+.btn-group1 .btn2 {
+  background-color: #FFFFFF;
+  /* 背景颜色为白色 */
+  color: #457DD4;
+  /* 文字颜色为蓝色 */
+  font-size: 16px;
+  /* 字体大小为16像素 */
+  padding: 10px 20px;
+  /* 上下内边距为10像素, 左右内边距为20像素 */
+  border-radius: 5px;
+  /* 边框半径为5像素，使边角圆滑 */
+  cursor: pointer;
+  /* 鼠标指针 */
+}
+
+.Hitokoto {
+  color: #457DD4;
+  font-size: 16px;
+  /* 字体大小为16像素 */
+  line-height: 1.5;
+  /* 行高为字体大小的1.5倍 */
+  margin-bottom: 20px;
+  /* 下外边距为20像素 */
+}
+
+.Hitokoto a {
+  text-decoration: none;
+  /* 去掉下划线 */
+}
+
+.Hitokoto a:hover {
+  text-decoration: underline;
+  /* 添加下划线 */
+}
+
+/*----------页脚样式----------*/
+
+/* 设置页脚的样式 */
+.footer {
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  justify-content: center;
+  /* 子元素在主轴上居中对齐 */
+  background-color: #457DD4;
+  /* 背景颜色为蓝色 */
+  color: #FFFFFF;
+  /* 文字颜色为白色 */
+  font-size: 15px;
+  /* 字体大小为15像素 */
+  text-align: center;
+  /* 文本居中对齐 */
+  align-items: center;
+  /* 子元素在交叉轴上居中对齐 */
+  height: 30px;
+  /* 高度为30像素 */
+}
+
+
+/* ---------- 响应式样式 ---------- */
